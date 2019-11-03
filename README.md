@@ -20,7 +20,7 @@ Di C9 SERVER/ VPS :
 - `sudo pip3 install youtube_dl`
 - `git clone https://github.com/cy11gabriel/PCRv01`
 - `cd PCRv01`
-- `python pcr.py`
+- `python3 pcr.py`
 
 INSTALL Di TERMUX :
 - `pkg update`
