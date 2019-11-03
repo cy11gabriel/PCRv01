@@ -20,7 +20,7 @@ Di C9 SERVER/ VPS :
 - `sudo pip3 install youtube_dl`
 - `git clone https://github.com/cy11gabriel/PCRv01`
 - `cd PCRv01`
-- `python prosb.py`
+- `python pcr.py`
 
 INSTALL Di TERMUX :
 - `pkg update`
@@ -42,7 +42,7 @@ INSTALL Di TERMUX :
 - `pip3 install pytz`
 - `git clone https://github.com/cy11gabriel/PCRv01`
 - `cd PCRv01`
-- `python3 prosb.py`
+- `python3 pcr.py`
 
 Cara Menjalankan Bot Kembali :
 ------
