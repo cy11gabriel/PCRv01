@@ -4,7 +4,7 @@ Cara Install Bot :
 Di C9 SERVER/ VPS :
 - `sudo apt-get update -y`
 - `sudo apt-get install git -y`
-- `sudo apt-get install python3-pip -y`
+- `sudo apt-get install python3`
 - `sudo pip3 install rsa`
 - `sudo pip3 install thrift==0.11.0`
 - `sudo pip3 install requests`
@@ -25,7 +25,7 @@ Di C9 SERVER/ VPS :
 INSTALL Di TERMUX :
 - `pkg update`
 - `pkg install git`
-- `pkg install python3-pip`
+- `pkg install python3`
 - `pip3 install rsa`
 - `pip3 install thrift==0.11.0`
 - `pip3 install requests`
