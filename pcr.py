@@ -22,14 +22,15 @@ call = cl
 creator = ["u218831e7123b7762b44e09707717aa16"]
 owner = ["u218831e7123b7762b44e09707717aa16"]
 admin = ["ube81e53a7f01a1756c3aa9f2e0df17db"]
+vice = []
 staff = ["u73d6484baf5334223636972f14530d67","u218831e7123b7762b44e09707717aa16"]
-pcr = owner + admin + staff
+pcr = owner + admin + vice + staff
 myMid = cl.profile.mid
 mid = cl.getProfile().mid
 KAC = [cl]
 ABC = [cl]
 Bots = [mid]
-Team = admin + staff
+Team = pcr
 
 protectqr = []
 protectkick = []
@@ -778,9 +779,11 @@ def bot(op):
                                 ma = ""
                                 mb = ""
                                 mc = ""
+				md = ""
                                 a = 0
                                 b = 0
                                 c = 0
+				d = 0
                                 for m_id in owner:
                                     end = '\n'
                                     ma += cl.getContact(m_id).displayName + "\n"
@@ -788,11 +791,15 @@ def bot(op):
                                     b = b + 1
                                     end = '\n'
                                     mb += str(b) + ". " +cl.getContact(m_id).displayName + "\n"
+				for m_id in vice:
+                                    d = d + 1
+                                    end = '\n'
+                                    md += str(d) + ". " +cl.getContact(m_id).displayName + "\n"
                                 for m_id in staff:
                                     c = c + 1
                                     end = '\n'
                                     mc += str(c) + ". " +cl.getContact(m_id).displayName + "\n"
-                                cl.sendMessage(msg.to,"LIST ADMIN PITCHORUS\n\nBot Dev: "+ma+"\nCommander:\n"+mb+"\nGeneral:\n"+mc+"\n\nTotal [%s] Admin Group" %(str(len(admin)+len(staff))))
+                                cl.sendMessage(msg.to,"LIST ADMIN PITCHORUS\n\nBot Dev: "+ma+"\nCommander:\n"+mb+"\nVice Commander:\n"+md+"\nGeneral:\n"+mc+"\n\nTotal [%s] Admin Group" %(str(len(admin)+len(vice)+len(staff))))
 
                         elif cmd == "sprespon":
                           if wait["selfbot"] == True:
