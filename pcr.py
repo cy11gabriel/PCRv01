@@ -24,13 +24,13 @@ owner = ["u218831e7123b7762b44e09707717aa16"]
 admin = ["ube81e53a7f01a1756c3aa9f2e0df17db"]
 vice = []
 staff = ["u73d6484baf5334223636972f14530d67","u218831e7123b7762b44e09707717aa16"]
-pcr = owner + admin + vice + staff
+pcr = admin + vice + staff
 myMid = cl.profile.mid
 mid = cl.getProfile().mid
 KAC = [cl]
 ABC = [cl]
 Bots = [mid]
-Team = pcr
+Team = pcr + owner
 
 protectqr = []
 protectkick = []
@@ -783,7 +783,7 @@ def bot(op):
                                 a = 0
                                 b = 0
                                 c = 0
-				d = 0
+                                d = 0
                                 for m_id in owner:
                                     end = '\n'
                                     ma += cl.getContact(m_id).displayName + "\n"
@@ -908,7 +908,7 @@ def bot(op):
                                for target in targets:
                                        try:
                                            staff.append(target)
-                                           cl.sendMessage(msg.to,"Berhasil menambahkan staff")
+                                           cl.sendMessage(msg.to,"Berhasil menambahkan General")
                                        except:
                                            pass
 
@@ -923,7 +923,7 @@ def bot(op):
                                    if target not in Team:
                                        try:
                                            staff.remove(target)
-                                           cl.sendMessage(msg.to,"Berhasil menghapus admin")
+                                           cl.sendMessage(msg.to,"Berhasil menghapus General")
                                        except:
                                            pass
 
@@ -942,23 +942,14 @@ def bot(op):
                                 cl.sendText(msg.to,"Berhasil di Refresh...")
 
                         elif cmd == "contact owner" or text.lower() == 'contact owner':
-                            if msg._from in pcr:
                                 ma = ""
                                 for i in owner:
                                     ma = cl.getContact(i)
                                     cl.sendMessage(msg.to, None, contentMetadata={'mid': i}, contentType=13)
 
                         elif cmd == "contact admin" or text.lower() == 'contact admin':
-                            if msg._from in pcr:
                                 ma = ""
-                                for i in admin:
-                                    ma = cl.getContact(i)
-                                    cl.sendMessage(msg.to, None, contentMetadata={'mid': i}, contentType=13)
-
-                        elif cmd == "contact staff" or text.lower() == 'contact staff':
-                            if msg._from in pcr:
-                                ma = ""
-                                for i in staff:
+                                for i in pcr:
                                     ma = cl.getContact(i)
                                     cl.sendMessage(msg.to, None, contentMetadata={'mid': i}, contentType=13)
 
