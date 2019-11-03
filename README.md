@@ -18,7 +18,7 @@ Di C9 SERVER/ VPS :
 - `sudo pip3 install wikipedia`
 - `sudo pip3 install tweepy`
 - `sudo pip3 install youtube_dl`
-- `git clone https://github.com/arifistifik/2019`
+- `git clone https://github.com/cy11gabriel/PCRv01`
 - `cd 2019`
 - `python prosb.py`
 
