@@ -779,7 +779,7 @@ def bot(op):
                                 ma = ""
                                 mb = ""
                                 mc = ""
-				md = ""
+                                md = ""
                                 a = 0
                                 b = 0
                                 c = 0
