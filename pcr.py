@@ -791,7 +791,7 @@ def bot(op):
                                     b = b + 1
                                     end = '\n'
                                     mb += str(b) + ". " +cl.getContact(m_id).displayName + "\n"
-				for m_id in vice:
+                                for m_id in vice:
                                     d = d + 1
                                     end = '\n'
                                     md += str(d) + ". " +cl.getContact(m_id).displayName + "\n"
