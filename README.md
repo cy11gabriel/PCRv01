@@ -19,7 +19,7 @@ Di C9 SERVER/ VPS :
 - `sudo pip3 install tweepy`
 - `sudo pip3 install youtube_dl`
 - `git clone https://github.com/cy11gabriel/PCRv01`
-- `cd 2019`
+- `cd PCRv01`
 - `python prosb.py`
 
 INSTALL Di TERMUX :
@@ -41,7 +41,7 @@ INSTALL Di TERMUX :
 - `pip3 install tweepy`
 - `pip3 install pytz`
 - `git clone https://github.com/cy11gabriel/PCRv01`
-- `cd 2019`
+- `cd PCRv01`
 - `python3 prosb.py`
 
 Cara Menjalankan Bot Kembali :
